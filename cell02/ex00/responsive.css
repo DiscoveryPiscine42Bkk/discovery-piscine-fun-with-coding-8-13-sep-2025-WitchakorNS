@@ -1,0 +1,28 @@
+    html, body { 
+        height: 100%; 
+        margin: 0; 
+    }
+
+    table {
+        width: 100%;
+        height: 100vh;
+        border-collapse: collapse;
+        table-layout: fixed;
+        font-size: 18px;
+        margin: 0;
+    }
+
+    td {
+        width: 50%;   
+        padding: 20px;
+        border: 1px solid black;
+        text-align: left;
+        vertical-align: middle;
+    }
+
+    .cell1 { 
+        background-color: rgb(252, 255, 192); 
+    }
+    .cell2 { 
+        background-color: rgb(255, 184, 184); 
+    }
