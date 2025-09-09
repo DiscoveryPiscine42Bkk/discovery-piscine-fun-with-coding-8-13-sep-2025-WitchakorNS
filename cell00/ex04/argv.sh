@@ -8,7 +8,4 @@ else
     for ((i=0; i<3 && i<${#args[@]}; i++)); do
         echo "${args[i]}"
     done
-fi
-
-
-~             
+fi             
