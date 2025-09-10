@@ -1,0 +1,43 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background: #f0f0f0;
+}
+.card {
+    border: 2px solid #ccc;
+    border-radius: 10px; 
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    background: white;
+}
+table {
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+td {
+    border: none;
+    text-align: center;
+    padding: 8px;
+}
+img.profile {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+img.social {
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+    }
+button {
+    padding: 8px 16px;
+    cursor: pointer;
+}
+a {
+    text-decoration: none;
+}
+

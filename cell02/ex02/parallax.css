@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.blackbox {
+    background-color: black;
+}
+
+.bg1 {
+    background-image: url("https://i.pinimg.com/736x/62/45/eb/6245ebf4c2aac5ba8f32dd2b09b58427.jpg");    
+}
+
+.bg2 {
+    background-image: url("https://i.pinimg.com/736x/56/1f/79/561f795d0ff5570e6a2d9d87f3f660cb.jpg");
+}
