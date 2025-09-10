@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Basic Calculator jQuery</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+    <input id="left" type="text">
+
+    <select id="op">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+        <option value="%">%</option>
+    </select>
+
+    <input id="right" type="text">
+
+    <input id="go" type="submit" value="Try me!">
+
+    <script>
+    setInterval(function () {
+        alert('Please, use me...');
+    }, 30000);
+
+    function isNonNegativeInteger(s) {
+        return /^\d+$/.test(s);
+    }
+
+
+    $("#go").click(function () {
+        const aStr = $("#left").val().trim();
+        const bStr = $("#right").val().trim(); 
+        const op   = $("#op").val();    
+
+        if (!isNonNegativeInteger(aStr) || !isNonNegativeInteger(bStr)) {
+            alert('Error :(');
+            return;
+        }
+
+        const a = parseInt(aStr, 10);
+        const b = parseInt(bStr, 10);
+
+        if ((op === '/' || op === '%') && b === 0) {
+            console.log("It's over 9000!");
+            alert("It's over 9000!");
+            return;
+        }
+
+        let result;
+        switch (op) {
+            case '+': result = a + b; break;
+            case '-': result = a - b; break;
+            case '*': result = a * b; break;
+            case '/': result = a / b; break;
+            case '%': result = a % b; break;
+        }
+
+        console.log(result);
+        alert(result);
+        });
+    </script>
+</body>
+</html>
