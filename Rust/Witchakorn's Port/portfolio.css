@@ -25,7 +25,7 @@ header {
     position: sticky;
     background-color: white;
     top: 0;
-    z-index: 1;
+    z-index: 1000;
 }
 
 .nav { 
@@ -288,4 +288,9 @@ footer {
     main {
         padding: 20px 0;
     }
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 70px;
 }
