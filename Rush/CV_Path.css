@@ -93,14 +93,14 @@ p.sub,p.meta {
     padding: 6px 10px;
     border-radius: 999px;
     background: #eef2ff;
-    color: #1d4ed8;
+    color: #000000;
 }
 
 .badge .dot {
     width: 8px;
     height: 8px;
     border-radius: 50%;
-    background: #2563eb; /* Replaced var(--accent) */
+    background: #000000;
 }
 
 .badge.alt {
@@ -109,5 +109,5 @@ p.sub,p.meta {
 }
 
 .badge.alt .dot {
-  background: #22c55e; /* Replaced var(--accent2) */
+    background: #22c55e;
 }
