@@ -20,7 +20,7 @@ const COOKIE_EXPIRE = "Thu, 01 Jan 2026 00:00:00 UTC";
         if (!txt) return;
         const name = String(new Date().getTime());
         document.cookie = `${name}=${txt}`;
-        $("#list").prepend(makeNode(txt, name));
+        $("#ft_list").prepend(makeNode(txt, name));
     }
 
     (document.cookie || "")
@@ -30,7 +30,7 @@ const COOKIE_EXPIRE = "Thu, 01 Jan 2026 00:00:00 UTC";
         .forEach(kv => {
         const [key, ...rest] = kv.split("=");
         const value = rest.join("=");
-        $("#list").prepend(makeNode(value, key));
+        $("#ft_list").prepend(makeNode(value, key));
     });
 
     $("#new").click(create);

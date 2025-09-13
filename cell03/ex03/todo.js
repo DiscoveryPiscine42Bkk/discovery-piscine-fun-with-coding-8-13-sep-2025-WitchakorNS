@@ -1,4 +1,4 @@
-const ft_list = document.getElementById("list");
+const ft_list = document.getElementById("ft_list");
 
 const COOKIE_EXPIRE = "Thu, 01 Jan 2026 00:00:00 UTC";
 
